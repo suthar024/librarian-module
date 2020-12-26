@@ -1,0 +1,5 @@
+CREATE TABLE 'admin'(
+'id' Int(100) DEFAULT NOT NULL,
+AdminEmail varchar(120) DEFAULT NOT NULL,
+UserName varchar(100)NULL,
+Password varchar(100)NULL);
