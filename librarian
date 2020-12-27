@@ -1,5 +1,19 @@
-CREATE TABLE 'admin'(
-'id' Int(100) DEFAULT NOT NULL,
-AdminEmail varchar(120) DEFAULT NOT NULL,
-UserName varchar(100)NULL,
-Password varchar(100)NULL);
+CREATE TABLE `Books` (
+  `ID` smallint(6) NOT NULL AUTO_INCREMENT,
+  `Name` varchar(20) DEFAULT NULL,
+  `Author_ID` smallint(6) DEFAULT NULL,
+  `Type` varchar(10) DEFAULT NULL,
+  `Description` varchar(20) DEFAULT NULL,
+  PRIMARY KEY (`ID`)
+);
+CREATE TABLE `PBook` (
+  `IBSN` smallint(6) NOT NULL,
+  `Book_ID` smallint(6) DEFAULT NULL,
+  `Pages` smallint(3) NOT NULL,
+  PRIMARY KEY (`IBSN`)
+);
+CREATE TABLE 'Event'(
+'ID' smallint(6) NOT NULL,
+'EventName' varchar(20),
+PRIMARY KEY('ID')
+);
